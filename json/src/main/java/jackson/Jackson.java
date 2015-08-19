@@ -53,6 +53,20 @@ public class Jackson {
         System.out.println(outter.getName());
     }
 
+    public void array2str() throws JsonParseException, JsonMappingException, IOException {
+        int[] arr = {1,2,3};
+        System.out.println(mapper.writeValueAsString(arr));
+    }
+
+    public void str2array() throws JsonParseException, JsonMappingException, IOException {
+        String str = "[1,2,3]";
+        int[] arr = mapper.readValue(str, int[].class);
+
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+    }
+
     public static void main(String[] args) {
         try {
             Jackson test = new Jackson();
@@ -60,6 +74,8 @@ public class Jackson {
             test.str2bean();
             test.outter2str();
             test.str2Outter();
+            test.array2str();
+            test.str2array();
         } catch (JsonParseException e) {
             e.printStackTrace();
         } catch (JsonMappingException e) {

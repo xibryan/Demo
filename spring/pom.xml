@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>spring.demo</groupId>
-    <artifactId>demo.basic</artifactId>
+    <artifactId>spring.demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <dependencyManagement>
         <dependencies>
@@ -16,12 +16,21 @@
                 <artifactId>spring-context</artifactId>
                 <version>4.2.0.RELEASE</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>4.2.0.RELEASE</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
         </dependency>
     </dependencies>
 </project>

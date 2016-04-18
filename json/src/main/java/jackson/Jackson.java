@@ -54,7 +54,7 @@ public class Jackson {
     }
 
     public void array2str() throws JsonParseException, JsonMappingException, IOException {
-        int[] arr = {1,2,3};
+        int[] arr = { 1, 2, 3 };
         System.out.println(mapper.writeValueAsString(arr));
     }
 

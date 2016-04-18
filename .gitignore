@@ -1,3 +1,4 @@
-/spring/.project
-/spring/.classpath
-/spring/.settings
+.classpath
+.project
+.settings
+target

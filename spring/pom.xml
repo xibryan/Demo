@@ -8,7 +8,7 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>spring.demo</artifactId>
+	<artifactId>spring</artifactId>
 
 	<dependencyManagement>
 		<dependencies>

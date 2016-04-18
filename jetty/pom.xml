@@ -7,7 +7,7 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>jetty.test</artifactId>
+	<artifactId>jetty</artifactId>
 
 	<dependencies>
 		<dependency>

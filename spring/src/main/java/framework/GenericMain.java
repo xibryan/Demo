@@ -6,14 +6,14 @@ import org.springframework.core.io.ClassPathResource;
 
 public class GenericMain {
 
-    public static void main(String[] args) {
-        GenericApplicationContext context = new GenericApplicationContext();
-        XmlBeanDefinitionReader xmlReader = new XmlBeanDefinitionReader(context);
-        xmlReader.loadBeanDefinitions(new ClassPathResource("applicationContext.xml"));
-        context.refresh();
+	public static void main(String[] args) {
+		GenericApplicationContext context = new GenericApplicationContext();
+		XmlBeanDefinitionReader xmlReader = new XmlBeanDefinitionReader(context);
+		xmlReader.loadBeanDefinitions(new ClassPathResource("applicationContext.xml"));
+		context.refresh();
 
-        HelloApi hello = context.getBean("hello", HelloApi.class);
-        hello.sayHello();
-    }
+		HelloApi hello = context.getBean("hello", HelloApi.class);
+		hello.sayHello();
+	}
 
 }

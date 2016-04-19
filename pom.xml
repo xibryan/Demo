@@ -11,6 +11,7 @@
 		<module>json</module>
 		<module>spring</module>
 		<module>osgi</module>
+		<module>java</module>
 	</modules>
 
 	<dependencies>

@@ -58,7 +58,7 @@ public class AES {
             cipher.init(Cipher.DECRYPT_MODE, key);// 初始化
 
             byte[] result = cipher.doFinal(content);
-            return new String(result); // 加密
+            return new String(result);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (NoSuchPaddingException e) {

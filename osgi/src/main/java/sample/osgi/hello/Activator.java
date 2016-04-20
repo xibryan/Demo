@@ -1,4 +1,4 @@
-package hello;
+package sample.osgi.hello;
 
 import java.util.Hashtable;
 

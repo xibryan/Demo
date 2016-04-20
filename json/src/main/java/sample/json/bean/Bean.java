@@ -1,4 +1,4 @@
-package bean;
+package sample.json.bean;
 
 public class Bean {
     private String name;

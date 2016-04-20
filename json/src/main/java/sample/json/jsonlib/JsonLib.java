@@ -1,8 +1,8 @@
-package jsonlib;
+package sample.json.jsonlib;
 
-import bean.Bean;
-import bean.OutterBean;
 import net.sf.json.JSONObject;
+import sample.json.bean.Bean;
+import sample.json.bean.OutterBean;
 
 public class JsonLib {
     public void str2bean() {

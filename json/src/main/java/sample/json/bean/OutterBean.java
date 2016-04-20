@@ -1,4 +1,4 @@
-package bean;
+package sample.json.bean;
 
 public class OutterBean {
     private int id;

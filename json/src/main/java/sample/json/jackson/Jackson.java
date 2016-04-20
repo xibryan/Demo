@@ -1,4 +1,4 @@
-package jackson;
+package sample.json.jackson;
 
 import java.io.IOException;
 
@@ -7,8 +7,8 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import bean.Bean;
-import bean.OutterBean;
+import sample.json.bean.Bean;
+import sample.json.bean.OutterBean;
 
 public class Jackson {
     private ObjectMapper mapper = new ObjectMapper();

@@ -16,7 +16,7 @@
 //========================================================================
 //
 
-package jetty.handler;
+package sample.jetty.handler;
 
 import org.eclipse.jetty.server.Server;
 

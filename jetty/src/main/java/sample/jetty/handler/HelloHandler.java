@@ -15,7 +15,7 @@
 //You may elect to redistribute this code under either of these licenses.
 //========================================================================
 //
-package jetty.handler;
+package sample.jetty.handler;
 
 import java.io.IOException;
 import java.io.PrintWriter;

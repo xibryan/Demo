@@ -1,4 +1,4 @@
-package framework;
+package sample.spring.framework;
 
 public class HelloImpl implements HelloApi {
 	public void sayHello() {

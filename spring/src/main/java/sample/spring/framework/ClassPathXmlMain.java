@@ -1,4 +1,4 @@
-package framework;
+package sample.spring.framework;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

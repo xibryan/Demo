@@ -23,17 +23,12 @@ public class HeapSort
     private static void adjustHeap(int[] data, int length, int index)
     {
         int curNode = index;
-        while (curNode < length)
+        while (2 * curNode <= length)
         {
             int biggerChild = 2 * curNode;
-            if (biggerChild > length)
+            if ((biggerChild + 1 <= length) && (data[biggerChild] > data[biggerChild - 1]))
             {
-                break;
-            }
-
-            if ((biggerChild + 1 <= length) && (data[(biggerChild + 1) - 1] > data[biggerChild - 1]))
-            {
-                biggerChild = 2 * curNode + 1;
+                biggerChild = biggerChild + 1;
             }
 
             if (data[biggerChild - 1] > data[curNode - 1])

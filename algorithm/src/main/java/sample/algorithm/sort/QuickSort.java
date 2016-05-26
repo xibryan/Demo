@@ -18,6 +18,7 @@ public class QuickSort
         }
     }
 
+    // 选择数组开头、结尾和中间的三个数中中间的数作为基准排序
     private static void selectBaseNumber(int[] data, int start, int end)
     {
         int pos = 0;

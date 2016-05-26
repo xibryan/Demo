@@ -4,10 +4,10 @@ public class MergeSort
 {
     public static void sort(int[] data)
     {
-        sort(data, 1, data.length);
+        mergeSort(data, 1, data.length);
     }
 
-    private static void sort(int[] data, int start, int end)
+    private static void mergeSort(int[] data, int start, int end)
     {
         if (start >= end)
         {
@@ -15,8 +15,8 @@ public class MergeSort
         }
 
         int middle = (start + end) / 2;
-        sort(data, start, middle);
-        sort(data, middle + 1, end);
+        mergeSort(data, start, middle);
+        mergeSort(data, middle + 1, end);
         merge(data, start, middle, end);
     }
 

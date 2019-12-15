@@ -1,16 +1,12 @@
 package sample.algorithm.sort;
 
-public class MergeSort
-{
-    public static void sort(int[] data)
-    {
+public class MergeSort {
+    public static void sort(int[] data) {
         mergeSort(data, 1, data.length);
     }
 
-    private static void mergeSort(int[] data, int start, int end)
-    {
-        if (start >= end)
-        {
+    private static void mergeSort(int[] data, int start, int end) {
+        if (start >= end) {
             return;
         }
 
@@ -20,37 +16,29 @@ public class MergeSort
         merge(data, start, middle, end);
     }
 
-    private static void merge(int[] data, int start, int middle, int end)
-    {
+    private static void merge(int[] data, int start, int middle, int end) {
         int[] tmp = new int[end - start + 1];
         int idxTmp = 0;
         int left = start, right = middle + 1;
-        while (left <= middle || right <= end)
-        {
-            if (left > middle)
-            {
+        while (left <= middle || right <= end) {
+            if (left > middle) {
                 tmp[idxTmp++] = data[right++ - 1];
                 continue;
             }
 
-            if (right > end)
-            {
+            if (right > end) {
                 tmp[idxTmp++] = data[left++ - 1];
                 continue;
             }
 
-            if (data[left - 1] < data[right - 1])
-            {
+            if (data[left - 1] < data[right - 1]) {
                 tmp[idxTmp++] = data[left++ - 1];
-            }
-            else
-            {
+            } else {
                 tmp[idxTmp++] = data[right++ - 1];
             }
         }
 
-        for (int j2 = 0; j2 < tmp.length; j2++)
-        {
+        for (int j2 = 0; j2 < tmp.length; j2++) {
             data[start + j2 - 1] = tmp[j2];
         }
     }

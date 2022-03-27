@@ -10,7 +10,6 @@
 		<module>jetty</module>
 		<module>json</module>
 		<module>spring</module>
-		<module>osgi</module>
 		<module>java</module>
 		<module>algorithm</module>
 	</modules>

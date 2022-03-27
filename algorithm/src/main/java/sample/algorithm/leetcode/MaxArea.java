@@ -11,22 +11,10 @@ public class MaxArea {
         }
 
         int max = 0;
-        int maxLeft = 0;
-        int maxRight = 0;
         int leftIdx = 0;
         int rightIdx = height.length - 1;
 
         while (leftIdx < rightIdx) {
-            if(height[leftIdx] <= maxLeft) {
-                leftIdx++;
-                continue;
-            }
-
-            if (height[rightIdx] <= maxRight) {
-                rightIdx--;
-                continue;
-            }
-
             int curArea = 0;
             int curLeft = height[leftIdx];
             int curRight = height[rightIdx];

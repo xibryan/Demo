@@ -2,16 +2,14 @@ package sample.algorithm.sort;
 
 public class HeapSort {
     public static void sort(int[] data) {
-        initHeap(data);
-        for (int length = data.length; length > 1; length--) {
-            swap(data, 1, length);
-            adjustHeap(data, length - 1, 1);
-        }
-    }
-
-    private static void initHeap(int[] data) {
+        // initHeap
         for (int i = data.length / 2; i > 0; i--) {
             adjustHeap(data, data.length, i);
+        }
+
+        for (int i = data.length; i > 1; i--) {
+            swap(data, 1, i);
+            adjustHeap(data, i - 1, 1);
         }
     }
 

@@ -1,3 +1,5 @@
+package sample.algorithm.leetcode;
+
 /*
 https://leetcode.cn/problems/sudoku-solver/
 37. 解数独
